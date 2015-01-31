@@ -1,0 +1,11 @@
+{% extends 'jinja/layout.html' %}
+
+{% block content %}
+<div id="blog-archives">
+  {% for text, link in items %}
+  <article>
+    <h1><a href="{{ link }}">{{ text }}</a></h1>
+  </article>
+    {% endfor %}
+</div>
+{% endblock %}
