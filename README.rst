@@ -121,6 +121,8 @@ Example
 
 It seems difficult, but with this example you are going to understand it easily:
 
+.. code::
+
     google_ads = {
       'pub': '1887364423515042',
       'slot': '7479875641',
