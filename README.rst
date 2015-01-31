@@ -47,13 +47,13 @@ This is an example; each variable is explained later. As you can see, I create a
     }
 
     github = {
-      'username': 'magmax'
-      'items': 3
+      'username': 'magmax',
+      'items': 3,
     }
 
     disqus = {
-      'username': 'magmax'
-      'last_items': 5
+      'username': 'magmax',
+      'last_items': 5,
     }
 
     GLOBAL_CONTEXT = {
@@ -94,14 +94,14 @@ github
 ~~~~~~
 
 - ``username``: Github username
-- ``items``: Number of repositories to show. Default is 3.
+- ``num_items``: Number of repositories to show. Default is 3.
 
 
 disqus
 ~~~~~~
 
 - ``username``: Disqus username
-- ``last_items``: Number of items to be shown.
+- ``num_items``: Number of items to be shown. Default is 5.
 
 
 .. _`Octopress classic theme`: https://github.com/octopress/classic-theme
