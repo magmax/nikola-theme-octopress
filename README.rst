@@ -72,26 +72,11 @@ asides
 
 Sorted list of sections to be shown in the sidebar. You can choose these blocks:
 
-google_ads
-__________
 
-Will show Google adsense ads. You need to configure the ``google_ads`` variable as well.
-
-github
-______
-
-Shows the latest updated GitHub repositories. You need to configure the ``github`` variable as well.
-
-disqus_last_comments
-____________________
-
-Shows a list of the latest comments in disqus. You need to configure the ``disqus`` variable as well.
-
-google_plus
-___________
-
-Shows the ``+1`` banner. No additional configuration is required.
-
+- ``google_ads``: Will show Google adsense ads. You need to configure the ``google_ads`` variable as well.
+- ``github``: Shows the latest updated GitHub repositories. You need to configure the ``github`` variable as well.
+- ``disqus_last_comments``: Shows a list of the latest comments in disqus. You need to configure the ``disqus`` variable as well.
+- ``google_plus``: Shows the ``+1`` banner. No additional configuration is required.
 
 
 google_ads
@@ -99,53 +84,24 @@ google_ads
 
 Dictionary with keys:
 
-pub
-___
-
-Public advertisement id, taken from Google Adsense.
-
-slot
-____
-
-Slot given by Google Adsense as well.
-
-width
-_____
-
-Advertisement width
-
-height
-______
-
-Advertisement height
+- ``pub``: Public advertisement id, taken from Google Adsense.
+- ``slot``: Slot given by Google Adsense as well.
+- ``width``: Advertisement width
+- ``height``: Advertisement height
 
 
 github
 ~~~~~~
 
-username
-________
-
-Github username
-
-items
-_____
-
-Number of repositories to show. Default is 3.
+- ``username``: Github username
+- ``items``: Number of repositories to show. Default is 3.
 
 
 disqus
 ~~~~~~
 
-username
-________
-
-Disqus username
-
-last_items
-__________
-
-Number of items to be shown.
+- ``username``: Disqus username
+- ``last_items``: Number of items to be shown.
 
 
 .. _`Octopress classic theme`: https://github.com/octopress/classic-theme
