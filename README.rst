@@ -1,12 +1,12 @@
 What is this?
 =============
 
-This is the [Octopress classic theme], ported to be used with [Nikola].
+This is the `Octopress classic theme`_, ported to be used with Nikola_.
 
 How to install it?
 ==================
 
-In your [Nikola] site:
+In your Nikola_ site:
 
 #. Create the ``themes`` directory and enter on it.
 #. Clone this repository there, naming it ``octopress``::
@@ -23,5 +23,5 @@ In your [Nikola] site:
 
 That's it!
 
-[Octopress classic theme]: https://github.com/octopress/classic-theme
-[Nikola]: http://getnikola.com/
+.. _`Octopress classic theme`: https://github.com/octopress/classic-theme
+.. _`Nikola`: http://getnikola.com/
