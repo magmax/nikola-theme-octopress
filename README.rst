@@ -30,7 +30,39 @@ Configuration
 
 This theme has some improvements over tipical Nikola_ themes, and they can be configured from the ``conf.py`` file.
 
-To configure them, you can use the ``GLOBAL_CONTEXT`` variable. I will show an example later.
+To configure them, you can use the ``GLOBAL_CONTEXT`` variable.
+
+Example
+-------
+
+This is an example; each variable is explained later. As you can see, I create a new variable for each section and then I add all of them to ``GLOBAL_CONTEXT``:
+
+.. code:: python
+
+    google_ads = {
+      'pub': '1887364423515042',
+      'slot': '7479875641',
+      'width': 180,
+      'height': 150,
+    }
+
+    github = {
+      'username': 'magmax'
+      'items': 3
+    }
+
+    disqus = {
+      'username': 'magmax'
+      'last_items': 5
+    }
+
+    GLOBAL_CONTEXT = {
+      'asides': ['google_ads', 'github', 'google_plus', 'disqus_last_comments'],
+      'google_ads': google_ads,
+      'github': github,
+      'disqus': disqus,
+    }
+
 
 Options
 -------
@@ -114,39 +146,6 @@ last_items
 __________
 
 Number of items to be shown.
-
-
-Example
--------
-
-It seems difficult, but with this example you are going to understand it easily:
-
-.. code::
-
-    google_ads = {
-      'pub': '1887364423515042',
-      'slot': '7479875641',
-      'width': 180,
-      'height': 150,
-    }
-
-    github = {
-      'username': 'magmax'
-      'items': 3
-    }
-
-    disqus = {
-      'username': 'magmax'
-      'last_items': 5
-    }
-
-    GLOBAL_CONTEXT = {
-      'asides': ['google_ads', 'github', 'google_plus', 'disqus_last_comments'],
-      'google_ads': google_ads,
-      'github': github,
-      'disqus': disqus,
-    }
-
 
 
 .. _`Octopress classic theme`: https://github.com/octopress/classic-theme
