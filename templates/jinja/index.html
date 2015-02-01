@@ -8,7 +8,7 @@
     <h1 class="entry-title"><a href="{{ post.permalink() }}">{{ post.title() }}</a></h1>
     <p class="meta">
       <time datetime="{{ post.date.isoformat() }}">{{ post.formatted_date(date_format) }}</time>
-      | <a href="{{ post.permalink() }}/#disqus_thread" data-disqus-identifier="{{ url }}">Comments</a>
+      | <a href="{{ post.permalink() }}#disqus_thread" data-disqus-identifier="{{ url }}">Comments</a>
     </p>
   </header>
 

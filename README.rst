@@ -39,6 +39,10 @@ This is an example; each variable is explained later. As you can see, I create a
 
 .. code:: python
 
+    google_analytics = {
+        'tracking_id': 'UA-9308241-1',
+    }
+
     google_ads = {
       'pub': '1887364423515042',
       'slot': '7479875641',
@@ -58,6 +62,7 @@ This is an example; each variable is explained later. As you can see, I create a
 
     GLOBAL_CONTEXT = {
       'asides': ['google_ads', 'github', 'google_plus', 'disqus_last_comments'],
+      'google_analytics': google_analytics,
       'google_ads': google_ads,
       'github': github,
       'disqus': disqus,

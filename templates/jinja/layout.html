@@ -14,7 +14,7 @@
 <header role="banner">
   <hgroup>
     <h1><a href="{{ url }}">{{ blog_title }}</a></h1>
-    <h2>{{ blog_description }}</h2>
+    <h2>{{ blog_subtitle | default(blog_description) }}</h2>
   </hgroup>
 </header>
 {% block navigation %}
@@ -37,5 +37,6 @@
 </footer>
 {% endblock %}
 
+{% include 'jinja/google_analytics.html' %}
 </body>
 </html>
