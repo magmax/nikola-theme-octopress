@@ -11,7 +11,7 @@
       if (!window.jXHR){
           var jxhr = document.createElement('script');
           jxhr.type = 'text/javascript';
-          jxhr.src = '/javascripts/libs/jXHR.js';
+          jxhr.src = '{{ root_url }}/assets/js/jXHR.js';
           var s = document.getElementsByTagName('script')[0];
           s.parentNode.insertBefore(jxhr, s);
       }
