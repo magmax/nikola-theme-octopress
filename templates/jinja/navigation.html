@@ -6,9 +6,9 @@
   {% endif %}
 
   {% if not disable_search_form %}
-  <form action="{{ site_simple_search }}" method="get">
+  <form action="{{ site_simple_search | default('http://google.com/search') }}" method="get">
     <fieldset role="search">
-      <input type="hidden" name="q" value="site:{{ root_url | replace('http://', '') }}" />
+      <input type="hidden" name="sitesearch" value="{{ root_url | replace('http://', '') }}" />
       <input class="search" type="text" name="q" results="0" placeholder="Search"/>
     </fieldset>
   </form>
