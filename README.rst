@@ -9,26 +9,25 @@ How to install it?
 
 In your Nikola_ site:
 
-#. Create the ``themes`` directory and enter on it.
-#. Clone this repository there, naming it ``octopress``::
+#. Install the theme from the Nikola themes repository::
 
-     git clone git@github.com:magmax/nikola-theme-octopress.git octopress
+    $ nikola install_theme octopress
 
 #. Edit your ``conf.py``, setting the variable ``THEME`` to ``octopress``::
 
      THEME = "octopress"
 
-#. Build again::
+#. Rebuild your site::
 
      $ nikola build
 
-That's it!
+That's it! You can also create the ``themes/`` directory yourself and manually clone this repository there (to the ``themes/octopress`` directory)
 
 
 Configuration
 =============
 
-This theme has some improvements over tipical Nikola_ themes, and they can be configured from the ``conf.py`` file.
+This theme has some improvements over typical Nikola_ themes, and they can be configured from the ``conf.py`` file.
 
 To configure them, you can use the ``GLOBAL_CONTEXT`` variable.
 
