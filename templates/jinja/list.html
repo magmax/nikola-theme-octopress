@@ -2,9 +2,12 @@
 
 {% block content %}
 <div id="blog-archives">
-  {% for text, link in items %}
+  {% for text, link, count in items %}
   <article>
-    <h1><a href="{{ link }}">{{ text }}</a></h1>
+      <h1><a href="{{ link }}">{{ text }}</a>
+      {% if count %}
+          ({{ count }})
+      {% endif %}</h1>
   </article>
     {% endfor %}
 </div>
